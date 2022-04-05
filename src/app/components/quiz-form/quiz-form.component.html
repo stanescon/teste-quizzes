@@ -1,0 +1,62 @@
+<form [formGroup]="formQuiz" class="form-quiz">
+  <input formControlName="team" type="hidden">
+  <input formControlName="type" type="hidden">
+
+  <label for="title">Titulo</label>
+  <input formControlName="title" type="text" id="title" class="input-padrao">
+
+  <label for="description">Descrição</label>
+  <input formControlName="description" type="text" id="description" class="input-padrao">
+
+  <label for="reward-xp">Recompensa em XP</label>
+  <input formControlName="rewardXP" type="number" id="reward-xp" class="input-padrao">
+
+  <legend>Level</legend>
+  <select formControlName="level" id="level">
+    <option class="option" value="EASY">EASY</option>
+    <option class="option" value="MEDIUM">MEDIUM</option>
+    <option class="option" value="HARD">HARD</option>
+  </select>
+</form>
+
+<form [formGroup]="formOptions" class="form-options">
+  <div class="box-options">
+    <div class="option-answers">
+      <div class="input-option">
+        <label for="options">Opção 1</label>
+        <input formControlName="option1" type="text" id="options" class="input-padrao">
+      </div>
+      <div class="value-answer">
+        <label><input formControlName="radio1" type="radio" name="radio1" value="true" class="input-radio">Verdadeiro</label>
+        <label><input formControlName="radio1" type="radio" name="radio1" value="false" class="input-radio">Falso</label>
+      </div>
+    </div>
+
+    <div class="option-answers">
+      <div class="input-option">
+        <label for="options">Opção 2</label>
+        <input formControlName="option2" type="text" id="options" class="input-padrao">
+      </div>
+      <div class="value-answer">
+        <label><input formControlName="radio2" type="radio" name="radio2" value="true" class="input-radio">Verdadeiro</label>
+        <label><input formControlName="radio2" type="radio" name="radio2" value="false" class="input-radio">Falso</label>
+      </div>
+    </div>
+
+    <div class="option-answers">
+      <div class="input-option">
+        <label for="options">Opção 3</label>
+        <input formControlName="option3" type="text" id="options" class="input-padrao">
+      </div>
+      <div class="value-answer">
+        <label><input formControlName="radio3" type="radio" name="radio3" value="true" class="input-radio">Verdadeiro</label>
+        <label><input formControlName="radio3" type="radio" name="radio3" value="false" class="input-radio">Falso</label>
+      </div>
+    </div>
+  </div>
+
+
+  <button [disabled]="formQuiz.invalid || formOptions.invalid" (click)="save()" class="save">Salvar</button>
+  <p class="message-error">{{ messageError }}</p>
+</form>
+

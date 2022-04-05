@@ -1,0 +1,75 @@
+.form-quiz, .form-options{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 100px auto;
+  position: relative;
+}
+label, legend{
+  font-size: 1.5rem;
+  color: #9277ff;
+}
+.input-padrao{
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  padding: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  outline: none;
+}
+select {
+  background: transparent;
+  border: none;
+  width: 100px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.option{
+  background: #10141f;
+  font-size: 1.2rem;
+  border: none;
+}
+.box-options{
+  display: flex;
+  flex-direction: column;
+}
+.option-answers{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.input-option{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 150px);
+}
+.value-answer{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.input-radio{
+  margin: 0px 10px;
+}
+.save {
+  margin: 50px 0;
+  width: 80px;
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #7ab462;
+  border-radius: 20px;
+  border: none;
+  align-self: flex-end;
+}
+.save:disabled {
+  background: #b5d1aa;
+}
+.message-error{
+  font-size: 1.2rem;
+  color: #ef5959;
+  position: absolute;
+  bottom: 15px;
+  right: 0px;
+}

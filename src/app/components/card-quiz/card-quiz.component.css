@@ -1,0 +1,57 @@
+.card-quiz{
+  width: 100%;
+  background: #1e2139;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: 2px 2px 2px #0d0f1f;
+}
+.info-quiz{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 1.5rem;
+  width: 70%;
+}
+.buttons-quiz{
+  padding: 15px;
+}
+.level{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.more-info, .edit, .delet{
+  padding: 5px 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 5px;
+  border-radius: 15px;
+  border: none;
+}
+.more-info{
+  background: #7ab462;
+}
+.delet{
+  background: #e16666;
+}
+.edit{
+  background: #9277ff;
+}
+
+@media screen and (max-width: 1065px){
+  .buttons-quiz{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    margin-right: 15px;
+  }
+  .info-quiz {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

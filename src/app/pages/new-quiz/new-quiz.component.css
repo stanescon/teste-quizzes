@@ -1,0 +1,32 @@
+.title-back{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 50%;
+  margin: 30px auto 0px auto;
+}
+.content {
+  width: 50%;
+  margin: 10px auto;
+}
+.bi-arrow-left-circle-fill{
+  margin: 0 15px;
+}
+.back{
+  width: 150px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  text-align: end;
+}
+
+@media screen and (max-width: 1065px){
+  .content{
+    width: 100%;
+    padding: 20px;
+  }
+  .title-back{
+    width: 100%;
+    padding: 20px;
+  }
+}

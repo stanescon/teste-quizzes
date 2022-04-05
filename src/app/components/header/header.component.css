@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background: #1e2139;
+  border-radius: 0 0 15px 0;
+}
+.welcome{
+  margin-left: 50px;
+  font-size: 1.5rem;
+}
+.logotipo{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.app-name{
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1065px) {
+  .welcome{
+    margin-left: 10px;
+  }
+  .logotipo{
+    gap: 15px;
+  }
+}

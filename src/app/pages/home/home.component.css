@@ -1,0 +1,23 @@
+.button{
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  margin: 40px auto;
+}
+.new-quiz{
+  width: 60px;
+  background: transparent;
+  border: none;
+  margin: 0 20px;
+}
+.content{
+  margin: 50px auto;
+  width: 80%;
+}
+
+@media screen and (max-width: 1065px){
+  .content {
+    width: 100%;
+    padding: 20px;
+  }
+}

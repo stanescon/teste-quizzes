@@ -1,0 +1,16 @@
+<div class="card-quiz">
+  <div class="info-quiz">
+    <p class="description">"{{ description }}"</p>
+    <div class="level">
+      <svg *ngIf="level === 'EASY'" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16"><path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 3z"/></svg>
+      <svg *ngIf="level === 'MEDIUM'" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16"><path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 3z"/></svg>
+      <svg *ngIf="level === 'HARD'" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16"><path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+      <p class="level">{{ level}}</p>
+    </div>
+  </div>
+  <div class="buttons-quiz">
+    <button (click)="moreInfo()" class="more-info">Ver</button>
+    <button (click)="edit()" class="edit">Editar</button>
+    <button (click)="delet()" class="delet">Deletar</button>
+  </div>
+</div>
