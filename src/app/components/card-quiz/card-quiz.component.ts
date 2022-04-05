@@ -33,7 +33,7 @@ export class CardQuizComponent implements OnInit {
 
   delet(){
     this.quizService.deletQuiz(this.id).subscribe((response: any) => {
-      location.reload()
+    alert('quiz deletado com sucesso')
     });
   }
 
