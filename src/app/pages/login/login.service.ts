@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 })
 export class LoginService {
 
-  api = environment.api
+  api = 'https://h-api-ava.tindin.com.br/'
   constructor(
     private http: HttpClient
   ) { }

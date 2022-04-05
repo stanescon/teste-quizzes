@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class QuizService {
-  api = environment.api
+  api = 'https://h-api-ava.tindin.com.br/'
   headers: HttpHeaders
   user
   constructor(
